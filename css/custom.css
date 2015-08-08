@@ -1,0 +1,128 @@
+/*
+ 
+Custom Styles for roscoelabs.com...
+
+*/
+
+.navs {
+}
+
+.navs * {
+  list-style: none;
+  max-width: 100%;
+}
+
+.rnavs {
+  margin-left: 1.5%;
+  background: #A80000;
+  color: white;
+  max-width: 425px;
+  padding: 0.75em;
+}
+
+.rnavs a, .rnavs * {
+  color: white;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.rnavs a {
+  margin-right: 0.75em;
+}
+
+.unavs {
+  padding: 0;
+  padding-top: 0.5em;
+}
+
+.unavs li {
+  background: #EBEBEB;
+  display: inline-block;
+  height: 2.5em;
+  padding: 0.5em 0.5em;
+  float: left;
+  margin: 0.5em 0.25em 0.25em 0;
+  border: 0.5px solid #B8B8B8;
+}
+
+.unavs li:last-child * { /* Clearing */
+  margin: 0;
+  padding: 0;
+  }
+
+.unavs li:last-child { /*  Styles for the nav search box container... */
+   background: #ebebeb;
+   overflow: hidden;
+   min-width: 200px;
+}
+
+.cse input.gsc-input,input.gsc-input {
+  display: inline-block;
+  background-image:none!important;
+  margin: 0;
+  padding: 0;
+  width: 98%;
+  }
+
+input.gsc-input {
+  display: inline-block;
+  height: 1.75em;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #969696;
+  position: relative;
+  left: 0.25em;
+  width: 98%;
+}
+
+input.gsc-search-button {
+  display: none;
+}
+
+form.gsc-search-box {
+  margin: 0;
+  padding: 0;
+  }
+
+div.gsc-control-cse {
+  margin: 0;
+  padding: 0;
+ }
+
+td.gsc-clear-button {display: none}
+
+.footer ul {list-style: none}
+
+.footer img, .ghbutton {
+  height: 2em;
+  min-height: 50px;
+  width: 2em;
+  min-width: 50px;
+}
+
+.ghbutton {
+  background: #828282;
+  display: inline-block;
+  }
+
+.ghbutton img {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+ }
+
+
+
+.footer, .footer a, .footer * {
+  background: #474747; 
+  color: white
+  }
+
+
+      @media only screen and (max-width: 300px) {
+		  
+         .unavs li:last-child {
+           min-width: none;
+          }
+		  
+		 }
