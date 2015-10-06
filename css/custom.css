@@ -1,14 +1,165 @@
 /*
- 
+
 Custom Styles for roscoelabs.com...
 
 */
 
-.navs {
+
+.navcontainer {
+  display: inline-block;
+  width: 100%;
 }
 
-.navs * {
+.navcontainer a, .navcontainer * {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.navcontainer img {
+  display: inline-block;
+  background: #A80000;
+  max-width: 375px;
+  padding: 0.75em;
+  margin: 0.25em 1em 0.25em 0;
+  float: left;
+  }
+
+.navcontainer ul {
+  /*
+  background: #EBEBEB;
+  */
+
+
   list-style: none;
+  padding: none;
+  float: left;
+}
+
+.navcontainer li {
+  display: inline-block;
+  background: #787878;
+  padding: 0.5em;
+  margin: 1.25em 0.5em 0.25em 0;
+  float: left;
+}
+
+.navcontainer li:first-child {
+  margin-left: 0;
+  }
+
+
+.navcontainer li:last-child {/* The search box in the navs*/
+  background: none;
+  margin: none;
+  padding: none;
+  height: 2em;
+  overflow: visible;
+  width: auto;
+  min-width: 30%;
+}
+
+.navcontainer li:last-child *, .cse * {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  background: white;
+  }
+
+
+.cse input.gsc-input,input.gsc-input {
+  display: inline-block;
+  background-image:none!important;
+  width: 100%;
+  height: 2em;
+  min-width: 225px;
+  background: white;
+  border: none;
+  }
+
+.input.gsc-input {
+  display: inline-block;
+  width: 100%;
+  background: white;
+}
+
+input.gsc-search-button {
+  display: none;
+  background: white;
+  border: none;
+}
+
+form.gsc-search-box {
+  margin: 0;
+  padding: 0;
+  background: white;
+  border: none;
+  border: 1px dotted red;
+}
+
+div.gsc-control-cse {
+  margin: 0;
+  padding: 0;
+  background: white;
+  border: 1px solid #787878;
+ }
+
+td.gsc-clear-button {display: none}
+
+
+
+
+
+/*
+.navbuttons {
+  display: inline-block;
+  width: 100%;
+  background: #EBEBEB;
+  list-style: none;
+  padding: none;
+}
+
+.navbuttons li {
+  background: #787878;
+  display: inline-block;
+  padding: 0.5em;
+  float: left;
+  width: auto;
+  min-width: 8%;
+  margin: 1.5em 0.25em 0.25em 0.25em;
+}
+
+.navbuttons a {
+  color: white;
+}
+
+.navbuttons span {
+  display: inline-block;
+  border: 2px dotted red;
+}
+
+.navcontainer li:first-child {
+}
+
+.navbuttons img {
+  width: 100%;
+  max-width: 300px
+}
+
+
+
+
+
+
+
+
+
+/*
+
+
+.navs * {
   max-width: 100%;
 }
 
@@ -46,50 +197,15 @@ Custom Styles for roscoelabs.com...
 }
 
 .unavs li:last-child * { /* Clearing */
+/*
   margin: 0;
   padding: 0;
   }
 
 .unavs li:last-child { /*  Styles for the nav search box container... */
-   background: #ebebeb;
-   overflow: hidden;
-   min-width: 200px;
+/*
 }
 
-.cse input.gsc-input,input.gsc-input {
-  display: inline-block;
-  background-image:none!important;
-  margin: 0;
-  padding: 0;
-  width: 98%;
-  }
-
-input.gsc-input {
-  display: inline-block;
-  height: 1.75em;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #969696;
-  position: relative;
-  left: 0.25em;
-  width: 98%;
-}
-
-input.gsc-search-button {
-  display: none;
-}
-
-form.gsc-search-box {
-  margin: 0;
-  padding: 0;
-  }
-
-div.gsc-control-cse {
-  margin: 0;
-  padding: 0;
- }
-
-td.gsc-clear-button {display: none}
 
 .footer ul {list-style: none}
 
@@ -114,15 +230,35 @@ td.gsc-clear-button {display: none}
 
 
 .footer, .footer a, .footer * {
-  background: #474747; 
+  background: #474747;
   color: white
   }
 
 
       @media only screen and (max-width: 300px) {
-		  
+
          .unavs li:last-child {
            min-width: none;
           }
-		  
+
 		 }
+
+
+*/
+
+.footer, .footer *, .footer a:visited {
+  background: #787878;
+  color: white;
+  }
+
+
+
+@media only screen and (max-width: 1300px) {
+  .navcontainer ul {
+    width: 100%;
+    }
+
+  .navcontainer img {
+    width: 90%;
+    max-width: 375px;
+}
