@@ -8,6 +8,7 @@ Custom Styles for roscoelabs.com...
 .navcontainer {
   display: inline-block;
   width: 100%;
+  padding: 0.25em;
 }
 
 .navcontainer a, .navcontainer * {
@@ -26,11 +27,6 @@ Custom Styles for roscoelabs.com...
   }
 
 .navcontainer ul {
-  /*
-  background: #EBEBEB;
-  */
-
-
   list-style: none;
   padding: none;
   float: left;
@@ -42,218 +38,141 @@ Custom Styles for roscoelabs.com...
   padding: 0.5em;
   margin: 1.25em 0.5em 0.25em 0;
   float: left;
+  height: 2.5em;
 }
 
 .navcontainer li:first-child {
   margin-left: 0;
   }
 
-
-.navcontainer li:last-child {/* The search box in the navs*/
-  background: none;
-  margin: none;
-  padding: none;
+.navcontainer .searchcontainer {
+  min-width: 22%;
+  border: 1px solid #D9D9D9;
+  background: white;
+  position: relative;
+  top: 0.25em;
+  left: 0.25em;
   height: 2em;
-  overflow: visible;
-  width: auto;
-  min-width: 30%;
 }
 
-.navcontainer li:last-child *, .cse * {
-  float: left;
+.navcontainer .searchcontainer * {
   margin: 0;
   padding: 0;
-  width: 100%;
-  border: none;
   background: white;
-  }
+}
 
-
-.cse input.gsc-input,input.gsc-input {
+.searchcontainer .cse input.gsc-input, .searchcontainer input.gsc-input {
   display: inline-block;
   background-image:none!important;
   width: 100%;
-  height: 2em;
-  min-width: 225px;
-  background: white;
+  height: 100%;
   border: none;
-  }
-
-.input.gsc-input {
   display: inline-block;
-  width: 100%;
-  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
 }
+
 
 input.gsc-search-button {
   display: none;
+}
+
+td.gsc-clear-button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+  /*
+  , .cse *, .navcontainer li:last-child *:focus, .cse *:focus
+  float: left;
+  display: inline;
+  max-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: white;
+  */
+  /*
+
+}
+
+
+
+.cse input.gsc-input,input.gsc-input {
+
+  background-image:none!important;
+  min-width: 200px;
+  height: 2em;
+
+  /*
+
+  */
+  /*  }
+
+.input.gsc-input {
+
+  /*
+
+  display: inline-block;
+  width: 100%;
+  background: white;
+
+  */
+  /*
+}
+
+input.gsc-search-button {
+
+  display: none;
+
+  /*
   background: white;
   border: none;
+  */
+  /*
 }
 
 form.gsc-search-box {
+  background: blue;
+  /*
   margin: 0;
   padding: 0;
   background: white;
   border: none;
   border: 1px dotted red;
+  */
+  /*
 }
-
+  /*
 div.gsc-control-cse {
-  margin: 0;
-  padding: 0;
-  background: white;
-  border: 1px solid #787878;
- }
-
-td.gsc-clear-button {display: none}
-
-
-
-
-
-/*
-.navbuttons {
-  display: inline-block;
-  width: 100%;
-  background: #EBEBEB;
-  list-style: none;
-  padding: none;
-}
-
-.navbuttons li {
-  background: #787878;
-  display: inline-block;
-  padding: 0.5em;
-  float: left;
-  width: auto;
-  min-width: 8%;
-  margin: 1.5em 0.25em 0.25em 0.25em;
-}
-
-.navbuttons a {
-  color: white;
-}
-
-.navbuttons span {
-  display: inline-block;
-  border: 2px dotted red;
-}
-
-.navcontainer li:first-child {
-}
-
-.navbuttons img {
-  width: 100%;
-  max-width: 300px
-}
-
-
-
-
-
-
-
-
-
-/*
-
-
-.navs * {
-  max-width: 100%;
-}
-
-.rnavs {
-  margin-left: 1.5%;
-  background: #A80000;
-  color: white;
-  max-width: 425px;
-  padding: 0.75em;
-}
-
-.rnavs a, .rnavs * {
-  color: white;
-  font-weight: normal;
-  display: inline-block;
-}
-
-.rnavs a {
-  margin-right: 0.75em;
-}
-
-.unavs {
-  padding: 0;
-  padding-top: 0.5em;
-}
-
-.unavs li {
-  background: #EBEBEB;
-  display: inline-block;
-  height: 2.5em;
-  padding: 0.5em 0.5em;
-  float: left;
-  margin: 0.5em 0.25em 0.25em 0;
-  border: 0.5px solid #B8B8B8;
-}
-
-.unavs li:last-child * { /* Clearing */
-/*
-  margin: 0;
-  padding: 0;
-  }
-
-.unavs li:last-child { /*  Styles for the nav search box container... */
-/*
-}
-
-
-.footer ul {list-style: none}
-
-.footer img, .ghbutton {
-  height: 2em;
-  min-height: 50px;
-  width: 2em;
-  min-width: 50px;
-}
-
-.ghbutton {
-  background: #828282;
-  display: inline-block;
-  }
-
-.ghbutton img {
-  width: 96%;
-  height: auto;
-  margin: 0 auto;
+  background: red;
  }
 
 
-
-.footer, .footer a, .footer * {
-  background: #474747;
-  color: white
-  }
+ */
 
 
-      @media only screen and (max-width: 300px) {
-
-         .unavs li:last-child {
-           min-width: none;
-          }
-
-		 }
 
 
-*/
 
 .footer, .footer *, .footer a:visited {
-  background: #787878;
+  background: #333333;
   color: white;
   }
 
 
 
 @media only screen and (max-width: 1300px) {
+
   .navcontainer ul {
     width: 100%;
     }
@@ -261,4 +180,22 @@ td.gsc-clear-button {display: none}
   .navcontainer img {
     width: 90%;
     max-width: 375px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  .navcontainer .searchcontainer, .navcontainer .searchcontainer * {display: none}
+
+/*
+.navcontainer .searchcontainer {
+  min-width: 40%;
+}
+
+*/
+
 }

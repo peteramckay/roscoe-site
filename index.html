@@ -14,7 +14,7 @@
   <link rel="dns-prefetch" href="//facebook.com/roscoelabs">
   <link rel="me" rel="//github.com/peteramckay">
   <link rel="icon" type="image/png" href="img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300">
   <link rel="stylesheet" type="text/css" href="css/beams.min.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script>
@@ -34,7 +34,7 @@
 
 <body>
 
-  <div class="twentycolumn navcontainer">
+  <div class="beam navcontainer">
 
     <a href="//roscoelabs.com/"><img src="img/white400.png" alt="Roscoe Labs logo" class="fivecolumn navlogo" class="sixcolumn"></a>
 
@@ -44,12 +44,14 @@
       <li><a href="spectrum">project spectrum</a></li>
       <li><a href="blog">blog</a></li>
       <li><a href="about">about</a></li>
-      <li>
-        <gcse:search></gcse:search>
+      <li class="searchcontainer">
+        <gcse:search class="searchblob"></gcse:search>
       </li>
     </ul>
-  </div><!--End 20col navcontainer -->
+  </div><!--End navcontainer beam -->
 
+
+  <div class="beam">
 
     <div class="tencolumn padded-bottom" id="mantra">
 
@@ -61,7 +63,7 @@
 
   </div><!-- End 10col container -->
 
-
+</div><!-- End beam -->
 
 
 
@@ -144,9 +146,15 @@
 	</div> End beam -->
 
 
+  <div class="beam margin-top margin-bottom"></div> <!-- A spacer div to add some vertical breathing room -->
 
 
-  <div class="twentycolumn padded-top padded-bottom footer margin-top">
+
+
+
+
+
+  <div class="beam padded-top padded-bottom footer margin-top">
 
     <div class="sixcolumn padded-top padded-bottom margin-top margin-bottom">
          <p>All site content (c) Roscoe Labs, 2014-2015. Licensed under <a href="//creativecommons.org/licenses/by/4.0/">Creative Commons 4.0</a>. </p>
@@ -161,9 +169,9 @@
     <div class="onecolumn"></div>
 
     <div class="sixcolumn padded-top padded-bottom margin-top margin-bottom">
-      <h5>Let's connect!</h5>
+      <h6>Connect</h6>
       <ul class="sociallinks">
-        <li><a href="//github.com/roscoelabs">github</a></li>
+        <li><a href="//github.com/roscoelabs" target="blank">github</a></li>
         <li><a href="//twitter.com/roscoe_labs" target="blank">twitter</a></li>
         <li><a href="//facebook.com/roscoelabs" target="blank">facebook</a></li>
       </ul> <!-- End sociallinks -->
@@ -206,8 +214,9 @@
       background: white;
       opacity: 0.95;
       padding: 0.5em 1em;
-      display: inline-block;
+      display: block;
     }
+
 
   </style>
 
