@@ -5,16 +5,26 @@ Custom Styles for roscoelabs.com...
 */
 
 
+
+
+/* Navbar styles */
+
 .navcontainer {
   display: inline-block;
   width: 100%;
   padding: 0.25em;
+  position: relative;
 }
 
 .navcontainer a, .navcontainer * {
   color: white;
   padding: 0;
   margin: 0;
+}
+
+.navcontainer>* {
+  position: relative;
+  z-index: 10;
 }
 
 .navcontainer img {
@@ -84,84 +94,27 @@ td.gsc-clear-button {
 }
 
 
-
-
-
-
-
-
-  /*
-  , .cse *, .navcontainer li:last-child *:focus, .cse *:focus
-  float: left;
-  display: inline;
-  max-height: 100%;
+.navcontainer .navscreen {
+  display: block;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: white;
-  */
-  /*
-
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: black;
+  opacity: 0.6;
+  border-bottom: 1px solid black
 }
 
 
 
-.cse input.gsc-input,input.gsc-input {
-
-  background-image:none!important;
-  min-width: 200px;
-  height: 2em;
-
-  /*
-
-  */
-  /*  }
-
-.input.gsc-input {
-
-  /*
-
-  display: inline-block;
-  width: 100%;
-  background: white;
-
-  */
-  /*
-}
-
-input.gsc-search-button {
-
-  display: none;
-
-  /*
-  background: white;
-  border: none;
-  */
-  /*
-}
-
-form.gsc-search-box {
-  background: blue;
-  /*
-  margin: 0;
-  padding: 0;
-  background: white;
-  border: none;
-  border: 1px dotted red;
-  */
-  /*
-}
-  /*
-div.gsc-control-cse {
-  background: red;
- }
-
-
- */
 
 
 
+
+
+/* footer styles */
 
 
 .footer, .footer *, .footer a:visited {
@@ -169,6 +122,33 @@ div.gsc-control-cse {
   color: white;
   }
 
+
+
+
+
+  /* blog styles */
+
+
+#bloghome, .bpostpg {
+  background: #ebebeb;
+  background: #4d4d4d;
+  }
+
+
+#bloghome *, .bpostpg * {
+  color: #ebebeb;
+
+}
+
+.bpostpg .beam:nth-child(2) .twelvecolumn {
+
+  /*Some spaghetti code to help with vertical spacing of blog copy... */
+
+  padding:1em
+
+  }
+
+  /* Media queries */
 
 
 @media only screen and (max-width: 1300px) {
@@ -184,6 +164,7 @@ div.gsc-control-cse {
 
 
 }
+
 
 
 
