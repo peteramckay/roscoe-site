@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
+<html lang="en-us" id="spechome">
 
 <head>
     <meta charset="utf-8">
@@ -14,35 +14,7 @@
     <link rel="me" rel="//github.com/peteramckay">
     <link rel="icon" type="image/png" href="../img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300">
-    <link rel="stylesheet" type="text/css" href="../css/beams.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/custom.css">
-    <script async src="https://paypal.com/paypal-button.min.js?merchant=info@roscoelabs.com"
-        data-button="buynow"
-        data-type="form"
-        data-name="My product"
-        data-amount-editable=""
-    ></script>
-
-
-
-
-
-
-
-
-    <script>
-    (function() {
-      var cx = '018161908375867075555:h4qdiqecrq8';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//cse.google.com/cse.js?cx=' + cx;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();
-    </script>
-
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
 </head>
 
 <body>
@@ -64,65 +36,37 @@
   </div><!--End navcontainer -->
 
 
-  <div class="beam margin-bottom padded-bottom" id="content">
+  <div class="beam margin-top margin-bottom padded-bottom" id="content">
 
     <div class="onecolumn"></div><!-- a spacer -->
 
-    <div class="elevencolumn">
+    <div class="elevencolumn content">
       <h1>Bootstrapping privacy and free speech for all</h1>
 
       <p>The Roscoe team has partnered with three great journalism schools on an exciting open-source initiative we call Project Spectrum. It's aim: to promote encrypted publishing in communities of color.</p>
       <p>Student journalists at each of our diverse partner universities -- Florida A&M, Hampton, and University of North Texas -- will get an HTTPS server from us, bundled with content-management and analytics tools dedicated to a specific on-campus publishing need. The Roscoe team will also provide support and training to students and staff using the new tools.</p>
       <p>This idea grew out of our participation in the Knight Foundation's News Challenge, a funding competition for data-driven projects. Our recent <a href="https://www.newschallenge.org/challenge/data/entries/promoting-data-encryption-to-communities-of-color">grant proposal</a> to Knight is still pending. But in the meantime, we're so excited about Project Spectrum that we've begun bootstrapping whatever parts we're already able to handle.</p>
       <p>In that spirit, we've set up several ways you can support Project Spectrum right now.</p>
-      <p>Most important, we're <a href="backer-options.html" target="blank">seeking crowdfunding</a> to cover the early stages of project work. Any money you give will help us cover things like development, hosting, and travel costs to our partner campuses.</p>
+      <p>Most important, we're <a href="crowdfund.html" target="blank">seeking crowdfunding</a> to cover the early stages of project work. Any money you give will help us cover things like development, hosting, and travel costs to our partner campuses.</p>
       <p>There's also a project listserv that anyone can join. This is a good option if you want to receive regular project updates and/or share your own ideas for how to make Project Spectrum better.</p>
       <p>For any social posts related to Project Spectrum, we'll be using the hashtag <a href="https://twitter.com/search?q=%23spectrum17&src=typd">#spectrum17</a>, in honor of the initiative's target completion in spring 2017. We'd encourage other people to do the same, of course, to help the project gain visibility and momentum.</p>
       <p>More updates to come soon. Stay tuned!</p>
-    </div>
+    </div><!-- End 11col container -->
+
+    <div class="onecolumn"></div><!-- a spacer -->
+
+    <div class="sixcolumn content">
+
+      <span id="support" class="margin-bottom">
+
+         <h5>Getting right to work, with your help</h5>
+         <img src="../img/legoworkerm.png" alt="lego worker">
+         <p>We're crowdfunding the early stages of our work on Project Spectrum. We hope you'll <a href="crowdfund.html" target="blank">help back our project financially</a>, to make the web a more free, secure place for everyone.</p>
+
+      </span><!-- End "support" widget -->
 
 
-    <div class="sevencolumn">
-
-
-
-<!--
-    <span id="backus">
-
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<table>
-<tr><td><input type="hidden" name="on0" value="Support Project Spectrum">Support Project Spectrum</td></tr><tr><td><select name="os0">
- <option value="Send">Send $10.00 USD</option>
- <option value="Send">Send $25.00 USD</option>
- <option value="Send">Send $50.00 USD</option>
- <option value="Send">Send $75.00 USD</option>
- <option value="Send">Send $100.00 USD</option>
- <option value="Send">Send $200.00 USD</option>
- <option value="Send">Send $400.00 USD</option>
- <option value="Send">Send $750.00 USD</option>
- <option value="Send">Send $1,000.00 USD</option>
- <option value="Send">Send $5,000.00 USD</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://roscoelabs.com/img/specbutton.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-
-
-    </span><!-- End "backus" span -->
-
-
-
-
-
-
-
-      <span id="collaborate"><h5 class="margin bottom">Collaborate</h5>
+      <span id="collaborate"><h5>Collaborate</h5>
         <p>We've set up several ways that anyone can use to contribute creatively to Project Spectrum.</p>
         <ul>
           <li><strong>Listserv.</strong> Our day-to-day workhorse for collaboration. Anyone can <a href="https://groups.google.com/forum/#!forum/project-spectrum">join</a> this email-based forum to receive and send regular project updates.</li>
@@ -134,23 +78,6 @@
         </ul>
 
       </span><!-- End "collaborate" widget -->
-
-
-
-<!--
-
-  A Twitter widget, for later....
-
-
-      <span>
-        <a class="twitter-timeline"  href="https://twitter.com/hashtag/spectrum17" data-widget-id="652277289711878144">#spectrum17 Tweets</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </span>
-
-
-      -->
-
-
 
 
     </div>
@@ -190,6 +117,22 @@
     <script src="../js/beams-client.min.js" type="text/javascript"></script>
 
 
+    <script>
+    (function() {
+      var cx = '018161908375867075555:h4qdiqecrq8';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+    </script>
+
+
+
+
     <script type="text/javascript">
 
        $(document).ready(function(){
@@ -211,56 +154,22 @@
 
     <style type="text/css">
 
-    html {
-    background: url('../img/typewriter3000.jpg');
-    background-position: center left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
 
 
-   #content {
-     margin-top: 2.5em;
-     }
-
-   #content .elevencolumn, #collaborate {
-     background: #F7F1E6;
-     opacity: 0.95;
-     padding: 2em;
-   }
-
-   #content .sevencolumn {
-     padding-top: 0;}
-
-   #collaborate, #support {    /* Styles for the intro palette/div */
+     #collaborate, #support {    /* Styles for the intro palette/div */
       display: inline-block;
-      margin-bottom: 0.5em;
     }
 
-    #support {
-      padding: 2em 1em;
-      display: block;
-      background: #F7F1E6;
+    .content.sixcolumn {
+      background: #ebebeb;
+      padding: 1em 2em;
     }
 
-
-
-/*
-
-  span *, form, form * {  /*Helps with paypal button styling*/
-  /*  max-width: 100%;
-    display: inline-block;
-    margin-bottom: 0.5em
-    }
-
-  form option {
-    display: block;
-    margin: auto 2px;
-    color: black;
-    }
-
-*/
+   #support img {
+     float: right;
+     max-width: 125px;
+     margin: 0.5em;
+   }
 
     </style>
 
