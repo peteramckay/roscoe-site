@@ -32,8 +32,10 @@
       text-align: center;
     }
 
+    #buttons h6 {text-align: center}
+
     .beam>div {
-      background: #ebebeb;
+      background: #f7f7f7;
       opacity: 0.95;
     }
 
@@ -41,64 +43,40 @@
       background: none;
     }
 
-    .elevencolumn {margin-right: 0.5em;}
+    .elevencolumn {
+      margin-right: 0.5em;
+      padding: 2em;
+      }
+
 
     .beam>#buttons {
-      /*
-
-      background: #575757;
-      color: #ebebeb;
-      opacity: 1.0;
-
-      */
+      padding-bottom: 1.5em;
+      padding-top: 1em;
     }
 
-/*
     form  {}
 
-    #flag {
-      text-align: center;
-      margin-top: 10em;
-    }
+      .backer-option {
+        display: block;
+        margin: 2px 0;
+        padding: 2px 0;
+      }
 
-    #flag h1 {
-      background: white;
-      padding: 0.5em;
+      .backer-option * {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .backer-option h6 {
+        text-align: center;
+        min-width: 40%;
+        font-weight: normal;
+        position: relative;
+        bottom: 2px
       }
 
 
-    .backer-option {
-      display: block;
-      margin: 2px 0;
-      padding: 2px 0;
-      border-bottom: 1px solid #B5B5B5;
-    }
-
-    .backer-option * {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-    }
-
-    .backer-option h5 {
-      min-width: 6.5em;
-      text-align: center;
-      font-weight: normal;
-      position: relative;
-      top: 5px;
-    }
-
-    #buttons {
-      background: #EBEBEB;
-      }
-
-    #copy #screen {
-      border: 2px dotted red;
-      display: block;
-      width: 75%;
-      margin: 0 auto;
-      }
-*/
   </style>
 
 </head>
@@ -126,201 +104,245 @@
   <div class="elevencolumn">
     <p>Project Spectrum is a partnership between the startup <a href="//roscoelabs.com">Roscoe Labs</a> and three diverse journalism schools to promote encrypted publishing of news.</p>
     <p>This is exciting, innovative work that we believe will ultimately promote greater user privacy and free speech across the web.</p>
-    <p>We're crowdfunding our early work on the project, asking the community to back us financially if you can. This will help us get up and running more quickly along with our partners — Florida A&M University, Hampton University, and University of North Texas.</p>
-    <p>The buttons on this page allow you to securely submit a payment in support of Project Spectrum via Stripe, a popular payments platform. (You can also subscribe to our <a href="https://groups.google.com/forum/#!forum/project-spectrum" target="blank">email list</a> if you want regular project updates.)</p>
-    <p>We hope you will support Project Spectrum financially. If so, please be assured we appreciate your backing, and that it's helping to make the web a better place for everyone.</p>
-
-
-
+    <p>We're crowdfunding our early work on the project, asking the community to back us financially, please. This will help us get up and running more quickly along with our partners — Florida A&M University, Hampton University, and University of North Texas.</p>
+    <p>The buttons on this page allow you to securely submit a payment in support of Project Spectrum. (You can also subscribe to our <a href="https://groups.google.com/forum/#!forum/project-spectrum" target="blank">email list</a> if you want regular project updates.)</p>
+    <p>We hope you will support Project Spectrum, please. If you do, be assured that we appreciate your contribution and that it's helping make the web better for everyone.</p>
   </div><!-- End 10col -->
   <div class="fivecolumn" id="buttons">
 
-
-    <h3 class="margin-bottom">Back Project Spectrum</h3>
+    <h6 class="margin-bottom">Back Project Spectrum</h6>
     <span class="backer-option">
-      <h5>$10</h5>
-      <form>
-         <script
-         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-         data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-         data-image="/img/documentation/checkout/marketplace.png"
-         data-name="Demo Site"
-         data-description="2 widgets"
-         data-amount="7500"
-         data-locale="auto">
-         </script>
-       </form>
+      <h6>$10</h6>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="info@roscoelabs.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+      <input type="hidden" name="amount" value="10.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="button_subtype" value="services">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="tax_rate" value="0.000">
+      <input type="hidden" name="shipping" value="0.00">
+      <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
     </span>
 
 
    <span class="backer-option">
-     <h5>$25</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="2500"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$25</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="25.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
    <span class="backer-option">
-     <h5>$50</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
-   </span>
-
-
-   <span class="backer-option">
-     <h5>$75</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="7500"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$50</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="50.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
 
    <span class="backer-option">
-     <h5>$100</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="2500"
-        data-locale="auto">
-        </script>
-      </form>
-   </span>
-
-   <span class="backer-option">
-     <h5>$250</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$75</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="75.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
 
    <span class="backer-option">
-     <h5>$400</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="7500"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$100</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="100.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+   </span>
+
+   <span class="backer-option">
+     <h6>$250</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="250.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
 
    <span class="backer-option">
-     <h5>$750</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="2500"
-        data-locale="auto">
-        </script>
-      </form>
-   </span>
-
-   <span class="backer-option">
-     <h5>$1,000</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$400</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="400.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
 
    <span class="backer-option">
-     <h5>$1,500</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$750</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="750.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
    <span class="backer-option">
-     <h5>$2,500</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$1,000</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="1000.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+   </span>
+
+
+   <span class="backer-option">
+     <h6>$1,500</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="1500.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
    <span class="backer-option">
-     <h5>$5,000</h5>
-     <form>
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_test_1x6vsW3ALFQLiAhAz4mmIH40"
-        data-image="/img/documentation/checkout/marketplace.png"
-        data-name="Demo Site"
-        data-description="2 widgets"
-        data-amount="5000"
-        data-locale="auto">
-        </script>
-      </form>
+     <h6>$2,500</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="2500.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+   </span>
+
+   <span class="backer-option">
+     <h6>$5,000</h6>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_xclick">
+     <input type="hidden" name="business" value="info@roscoelabs.com">
+     <input type="hidden" name="lc" value="US">
+     <input type="hidden" name="item_name" value="Project Spectrum - Thank You!">
+     <input type="hidden" name="amount" value="5000.00">
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="hidden" name="button_subtype" value="services">
+     <input type="hidden" name="no_note" value="0">
+     <input type="hidden" name="tax_rate" value="0.000">
+     <input type="hidden" name="shipping" value="0.00">
+     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynow_LG.gif:NonHostedGuest">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
    </span>
 
 

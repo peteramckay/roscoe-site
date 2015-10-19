@@ -9,6 +9,15 @@
   <link>//roscoelabs.com/blog</link>
   <description>Official company blog for Roscoe Labs, including developer updates, product news, and other information.</description>
 
+
+  <item>
+    <title>Bootstrapping Project Spectrum</title>
+    <link>//roscoelabs.com/blog/20151019-project-spectrum-crowdfunding.html</link>
+    <description>Today we're launching a crowdfunding campaign for Project Spectrum, our new effort to promote encrypted publishing of news.</description>
+    <pubDate>Monday, 19 October 2015 18:00:00 GMT</pubDate>
+  </item>
+
+
   <item>
     <title>Additional Benchmark Tests for Beams</title>
     <link>//roscoelabs.com/blog/20150624-further-tests.html</link>
