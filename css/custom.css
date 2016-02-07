@@ -17,7 +17,7 @@ Custom Styles for roscoelabs.com...
 }
 
 .navcontainer a, .navcontainer * {
-  color: white;
+  color: white;  
   padding: 0;
   margin: 0;
   font-weight: normal;
@@ -112,7 +112,7 @@ td.gsc-clear-button {
   z-index: 0;
   background: black;
   opacity: 0.7;
-  border-bottom: 1px solid black
+  border-bottom: 1px solid black;
 }
 
 
