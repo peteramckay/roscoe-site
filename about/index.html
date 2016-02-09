@@ -1,177 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-us" class="aboutpg">
+
+<html lang="en" id="homepage">
 
 <head>
+	
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width"><!-- Helps with responsive display -->
-  <title>About Us</title>
-  <link rel="prefetch" href="../products">
-  <link rel="prefetch" href="../services">
-  <link rel="prefetch" href="../spectrum">
+  <meta name="viewport" content="width=device-width">
+  <title>About Roscoe Labs</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+  <link rel="stylesheet" type="text/css" href="../css/site.css">
+  
+  <!-- 
+  
+  Once testing is done, minify and link to minified CSS file...
+  
+  <link rel="stylesheet" type="text/css" href="css/site.min.css">
+  
+  -->
+
   <link rel="dns-prefetch" href="//github.com/roscoelabs">
   <link rel="dns-prefetch" href="//twitter.com/roscoe_labs">
   <link rel="dns-prefetch" href="//facebook.com/roscoelabs">
-  <link rel="me" rel="//github.com/peteramckay">
-  <link rel="icon" type="image/png" href="../img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300">
-  <link rel="stylesheet" type="text/css" href="../css/beams.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/custom.css">
-  <script>
-  (function() {
-    var cx = '018161908375867075555:h4qdiqecrq8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-  </script>
+  
 </head>
+
 
 <body>
 
-  <div class="beam navcontainer">
+  
+    <div class="navigation beam">
+		
+		<div class="sixteencolumn centered">
+			
+   		  <a href="../index.html"><img src="../img/red400.png" alt="Roscoe Labs logo"></a>
+	
+	      <ul>
+            <li><a href="//github.com/roscoelabs"><img src="../img/octocat.png" alt="GitHub logo"></a></li>
+            <li><a href="//twitter.com/Roscoe_Labs"><img src="../img/twitter.jpg" alt="Twitter logo"></a></li>
+            <li><a href="//www.facebook.com/RoscoeLabs"><img src="../img/fb.jpg" alt="Facebook logo"></a></li>
+            <li><a href="../rss/everything.xml"><img src="../img/rss.jpg" alt="RSS logo"></a></li>
+          </ul>
+<!--
+            <div class="searchcontainer">
+				  <script>
+                      (function() {
+                        var cx = '018161908375867075555:h4qdiqecrq8';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                       })();
+                   </script>
 
-    <a href="//roscoelabs.com/"><img src="../img/white400.png" alt="Roscoe Labs logo" class="fivecolumn navlogo" class="sixcolumn"></a>
-
-    <ul class="fourteencolumn">
-      <li><a href="../products">#products</a></li>
-      <li><a href="../services">#services</a></li>
-      <li><a href="../spectrum">#spectrum17</a></li>
-      <li><a href="../blog">#blog</a></li>
-      <li><a href="../about">#about</a></li>
-      <li class="searchcontainer">
-        <gcse:search class="searchblob"></gcse:search>
-      </li>
-    </ul>
-    <span class="navscreen"></span>
-
-  </div><!--End navcontainer -->
-
-
-  <div class="beam margin-top margin-bottom"></div><!-- A spacer for vertical rhythm-->
-
-
-
-
-  <div class="beam" id="aboutcontent">
-
-    <div class="onecolumn"></div> <!-- -->
-
-
-    <div class="twelvecolumn padded-top padded-bottom">
-
-    <h1 class="margin-bottom">Meet the Roscoeheads</h1>
-    <p>Roscoe Labs is a founder-led company dedicated to the ideal of open media and open communities.</p>
-    <p>Our flagship product is the <a href="/beams">Beams framework</a> for making secure, media-rich websites. It's free to use under MIT license, and we welcome contributions of all kinds from the community to its continued development.</p>
-    <p>We also invite the public to participate in <a href="../spectrum">Project Spectrum</a>, an open-source partnership we've launched with three great universities to promote encrypted publishing in communities of color.</p>
-    <p>Below are bios for each of Roscoe Labs' founders -- <a href="#lpbio" target="_self">Lawrence Patrick</a>, <a href="#pmbio" target="_self">Peter McKay</a>, and <a href="#kmbio" target="_self">Katrina Miles</a>.</p>
-    <p>The team members all met at Florida A&M University's journalism school in the mid-1990s. We went on to varied careers in journalism, technology, filmmaking, and the nonprofit sector before reconvening to form Roscoe Labs.</p>
-    <p>We welcome inquiries via <a href="mailto:info@roscoelabs.com">email</a>, <a href="//twitter.com/roscoe_labs">Twitter</a>, or <a href="//facebook.com/roscoelabs">Facebook</a>. Our snail mail is 317 Washington St., Suite 146; Oakland, CA 94607.</p>
-
-      <hr class="margin-top margin-bottom">
-    <p class="fname" id="lpbio"><strong>Lawrence C. Patrick III,</strong> Chief Executive Officer</p>
-    <p><img src="//roscoeblog.files.wordpress.com/2011/06/lawrence.jpeg" alt="Lawrence Patrick" class="fourcolumn">Lawrence built his first website in 1994, before Netscape was launched. He went on to work on Mercury Center, the first daily news site in the U.S. Lawrence worked in Silicon Valley for Knight-Ridder New Media, launching several web-based products, including NewsLibrary.com, currently the world’s largest newspaper archive. He also worked closely on news products with Zip2, a startup founded by Elon and Kimbal Musk.</p>
-    <p>After leaving K-R, Lawrence co-founded Megaschool, one of the first digital textbook companies. He also served as founding president and CEO of Inspire USA Foundation, where he led the U.S. expansion of one of Australia’s leading anti-suicide charities. Before coming to Inspire, he was director of business development and strategy for Jazz at Lincoln Center, where he was responsible for new media, content distribution, intellectual property and corporate partnerships for the jazz world’s largest organization.</p>
-    <p>As president and CEO of the Black Alliance for Educational Options, Lawrence led the organization through dramatic early-stage growth. Under his leadership, BAEO helped shape public policy, launched several grassroots campaigns, and received a grant from the Bill &amp; Melinda Gates Foundation to create a national network of charter schools. Lawrence was selected for a fellowship to attend the Stanford University Graduate School of Business Executive Program for Nonprofit Leaders in 2006.</p>
-    <p><a href="mailto:lawrence@roscoelabs.com">Email Lawrence >></a></p>
-    <hr class="margin-top margin-bottom">
-    <p class="fname" id="pmbio"><strong>Peter McKay,</strong> Chief Product Officer</p>
-    <p><img src="../img/pmrumours.jpeg" alt="Peter McKay" class="fourcolumn">Peter is a former Wall Street Journal markets reporter. Over 11 years at the paper, he wrote extensively for both the web and print editions, including daily coverage of the stock-market crash in late 2008. In the months following that historic event, he provided market analysis for more than 100 broadcast outlets, including CNN, the BBC, Fox News, CNBC, San Francisco's KRON and New York's WCBS on the Journal's behalf. Peter was part of the Journal team that won a 2011 Gerald Loeb Award for breaking coverage of the stock market's "flash crash," and he was a finalist in the same category in 2007. He was part of the Journal staff that as a group won the 2002 Pulitzer Prize for breaking coverage of the 9/11 terror attacks. In 2002, he was also an ethics fellow at the Poynter Institute for Media Studies. In 2009, Florida A&amp;M University's journalism school gave him the Thelma Thurston Gorham Distinguished Alumnus Award. Peter has significant operational responsibility at Roscoe Labs and oversees innovation and development for us.</p>
-    <p><a href="mailto:pete@roscoelabs.com">Email Peter >></a></p>
-    <hr class="margin-top margin-bottom">
-    <p class="fname" id="kmbio"><strong>Katrina Miles,</strong> Chief Strategy Officer</p>
-    <p class="padded-bottom"><img src="//roscoeblog.files.wordpress.com/2011/06/katrina.jpeg" alt="Katrina Miles" class="fourcolumn">Katrina Miles is an award-winning television and feature documentary film producer. As Chief Strategic Officer she is responsible for creating, communicating, executing and sustaining strategic initiatives. She is also a consultant and board advisor for international NGO, The Smallest Seed, empowering widows and orphans in Africa, Central Asia and China. She also served as a communications consultant for executive offices of the National Trust for Historic Preservation. In addition, Katrina has helped to develop shows for Discovery Networks, The History Channel, Oregon Public Television, PBS Sprout, and WNET, New York’s main public TV affiliate. Katrina is active on several boards around New York City, and has written for the Detroit Free Press, the Philadelphia Inquirer and the Boston Globe. She is also the former executive director of the Lewis H. Latimer Fund and a Deputy Communications Director under former Florida Gov. Jeb Bush.</p>
-    <p><a href="mailto:katrina@roscoelabs.com">Email Katrina >></a></p>
+				<p>searchbox</p>
+            </div>
 
 
+-->
+          
+          <span></span>
+	
+		</div><!-- End 16col container-->
+		         
+    </div><!-- end beam-->
+    
+        
+    <div class="padded-top padded-bottom beam margin-bottom">
 
-    </div><!-- End 15column-->
+      <div class="threecolumn"></div>
+      <div class="twelvecolumn margin-bottom padded-bottom">
 
-  </div><!-- End beam -->
+        <h1>About Us</h1>
+        <p>Roscoe Labs is a founder-led company dedicated to helping digital publishers of all sizes thrive technically, economically, and creatively on their own distribution channels.</p>
+        <p>Our flagship product is the Beams framework for publishing websites securely via the HTTPS protocol. HTTPS is now advocated by developers at <a href="http://www.pcworld.com/article/3027525/security/google-will-mark-non-encrypted-websites-with-a-scarlet-letter.html" target="blank">Google</a>, the <a href="//blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/" target="blank">Mozilla Foundation</a>, the <a href="http://open.blogs.nytimes.com/2014/11/13/embracing-https/?_r=4" target="blank">New York Times</a>, the <a href="//www.washingtonpost.com/news/the-switch/wp/2015/06/30/washington-post-starts-to-automatically-encrypt-part-of-web-site-for-visitors/" target="blank">Washington Post</a>, and more as a tool to protect user privacy.<p>
+        <p>Beams is free to use under MIT license, so you can <a href="../beams-0.2.5.zip">download it</a> and begin using it in your projects today. Or <a href="//github.com/roscoelabs">visit us on GitHub</a> to participate in development of future releases.</p>
+        <p>If you would like Roscoe Labs to help your business or organization implement HTTPS, please <a href="mailto:info@roscoelabs.com">drop us an email</a>. We're glad to talk more about your needs.</p>
+        <p>Our approach to development is highly collaborative and multidisciplinary. We believe it simply won't do anymore for content companies to slough off development of new digital tools, or for tech companies to be oblivious to key needs of content creators.</p>        
+        <p>Together we can do better than that. Just watch.</p>
+        
+        
+                   
 
+      </div>
+    
+    
+ 
+    
+      
+    </div><!-- End beam -->
 
-
-
-  <div class="beam padded-top padded-bottom footer margin-top">
-
-    <div class="sixcolumn padded-top padded-bottom margin-top margin-bottom">
-         <p>All site content (c) Roscoe Labs, 2014-2015. Licensed under <a href="//creativecommons.org/licenses/by/4.0/">Creative Commons 4.0</a>. </p>
-    </div>
-
-    <div class="onecolumn"></div>
-
-    <div class="sixcolumn padded-top padded-bottom margin-top margin-bottom">
-         <p>Beams software (c) Peter McKay, 2014-2015. Licensed under <a href="//opensource.org/licenses/MIT">MIT License</a>.</p>
-    </div>
-
-    <div class="onecolumn"></div>
-
-    <div class="sixcolumn padded-top padded-bottom margin-top margin-bottom">
-      <h6>Connect</h6>
-      <ul class="sociallinks">
-        <li><a href="//github.com/roscoelabs" target="blank">github</a></li>
-        <li><a href="//twitter.com/roscoe_labs" target="blank">twitter</a></li>
-        <li><a href="//facebook.com/roscoelabs" target="blank">facebook</a></li>
-      </ul> <!-- End sociallinks -->
-    </div>
-
-
-
-    <script src="../js/beams-client.min.js" type="text/javascript"></script>
-
-
-    <script type="text/javascript">
-
-  	   $(document).ready(function(){
-
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-38626596-2', 'roscoelabs.com');
-            ga('send', 'pageview');
-
-
-        }); //End ready
-
-    </script>
-
-
-
-    <style type="text/css">
-
-    html {
-		background: url('../img/theoak3500.jpg');
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		}
-
-
-
-      #aboutcontent .twelvecolumn {
-      padding: 2em;
-      background: #E4E6F5;
-  		opacity: 0.95;
-  		}
-
-  	.fifteencolumn img {
-  		border: 1px solid #969696;
-  		max-width: 150px;
-  		padding: 0;
-  		margin: 0.5em 1em 0.75em 0;
-  		}
-
-
-    </style>
-
-
-</div> <!--End footer -->
 
 
 </body>
