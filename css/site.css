@@ -608,8 +608,6 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	  border-bottom: 1px solid #D9D9D9;
 	  border-bottom: 1px solid #cccccc;
 	  margin: 0;
-	  display: block;
-	  clear: both;
 	}
 		
     .navigation img {
