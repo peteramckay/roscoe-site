@@ -595,379 +595,98 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
 /* Navbar styles */
 
-    .navigation, .navigation * {
-		position: relative;
-		z-index: 1;
-		padding: 0;
-		margin: 0;
-		}
-		
-	.navigation {
-	  padding: 0.5em 0.5em 0 0.5em;
-	  background: #e8e8e8;
-	  border-bottom: 1px solid #D9D9D9;
-	  border-bottom: 1px solid #cccccc;
-	  margin: 0;
-	}
-		
-    .navigation img {
-		max-width: 175px;
-		}
-    
-    .navigation ul {
-        float: right;
-		list-style: none;
-		margin-top: 0.25em;
-		}
-		
-    .navigation li, .navigation li img {
-		display: inline-block;
-		height: 0.5em;
-		min-height: 30px;
-		width: auto;
-		}
 
-	.navigation .sixteencolumn {
-          padding: 0.75em;
-  		}
-  		
-    .navigation span {
-        position: absolute;
-        z-index: 0;		
-		display: inline-block;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.65;
-		
-		}
-
-
-
-/*
-
-Old styles from the current site...
-
-.navcontainer {
-  display: inline-block;
-  width: 100%;
-  padding: 0.25em;
-  position: relative;
-
-
-v.navcontainer a, .navcontainer * {
-  color: white;
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
+.navigation  {
+  background: #e8e8e8;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 0.8em;
 }
 
-.navcontainer>* {
-  position: relative;
-  z-index: 10;
-}
-
-.navcontainer img {
-  display: inline-block;
-  background: #A80000;
-  width: 18%;
-  max-width: 250px;
-  padding: 0.75em;
-}
-
-.navcontainer ul {
+.navigation *, .navigation .RLstuff li a, .navigation .RLstuff li a:visited {
   list-style: none;
-  padding: none;
-  float: left;
+  font-weight: normal;
+  color: #6b6b6b;
 }
 
-.navcontainer img, .navcontainer li {
-  margin-right: 2em;
 
-}
-
-.navcontainer li {
+.navigation .RLstuff * {
   display: inline-block;
-  padding: 1.25em 0 0.25em 0;
-
-  /*
-  padding: 0.5em;
-  margin: 1.5em 1em 0.25em 0;
-  float: left;
-
-  */
-/*  height: 2.5em;
 }
 
-.navcontainer li:first-child {
-  margin-left: 0;
-  }
 
-.navcontainer .searchcontainer {
-  min-width: 20%;
-  border: 1px solid #D9D9D9;
-  background: white;
+.navigation .RLstuff img {
+  max-width: 175px;
+  padding: 0;
+  margin: 0.5em 1.75em 0 0; 
+  position: relative;
+  top: 0.25em;
+ }
+
+.navigation .RLstuff li {
+  margin-top: 0.25em;
+}
+ 
+.navigation .RLstuff a {
+  margin: 3px;
+  padding: 0;
+}
+
+
+.navigation .SVstuff {
+  text-align: right;
+  position: relative;
+  top: 0.5em;
+}
+
+
+.navigation .SVstuff .searchbox, .navigation .SVstuff .social {
+  display: inline-block;
+}
+
+
+.navigation .SVstuff .social {
+  margin-right: 1em;
+}
+
+.navigation .SVstuff .social li {
   position: relative;
   top: 0.75em;
-  height: 1.5em;
+  margin-right: 0.25em;
 }
 
-.navcontainer .searchcontainer * {
+.navigation .searchbox {
+  display: inline-block;
+  min-width: 175px;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  top: 0.75em;
+}
+
+.navigation .searchbox * {
+  max-height: 2.25em;
   margin: 0;
   padding: 0;
-  background: white;
 }
 
-.searchcontainer .cse input.gsc-input, .searchcontainer input.gsc-input {
+.navigation .SVstuff li {
+  display: inline-block;
+}
+
+.navigation .SVstuff img{
+  max-height: 30px;
+  width: auto;
+}
+
+.cse input.gsc-input, input.gsc-input {
   display: inline-block;
   background-image:none!important;
   width: 100%;
   height: 100%;
   border: none;
-  display: inline-block;
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 5px;
 }
-
-
-input.gsc-search-button {
-  display: none;
-}
-
-td.gsc-clear-button {
-    display: none;
-}
-
-
-.navcontainer .navscreen {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background: black;
-  opacity: 0.7;
-  border-bottom: 1px solid black
-}
-
-/*
-
-Custom Styles for roscoelabs.com...
-
-*/
-
-
-
-
-/* Navbar styles */
-
-
-
-
-
-
-
-/*  From 
-.navcontainer {
-  display: inline-block;
-  width: 100%;
-  padding: 0.25em;
-  position: relative;
-}
-
-.navcontainer a, .navcontainer * {
-  color: white;  
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
-}
-
-.navcontainer>* {
-  position: relative;
-  z-index: 10;
-}
-
-.navcontainer img {
-  display: inline-block;
-  background: #A80000;
-  width: 18%;
-  max-width: 250px;
-  padding: 0.75em;
-}
-
-.navcontainer ul {
-  list-style: none;
-  padding: none;
-  float: left;
-}
-
-.navcontainer img, .navcontainer li {
-  margin-right: 2em;
-
-}
-
-.navcontainer li {
-  display: inline-block;
-  padding: 1.25em 0 0.25em 0;
-
-  /*
-  padding: 0.5em;
-  margin: 1.5em 1em 0.25em 0;
-  float: left;
-
-  */
-
-
-
-  /*
-
-  height: 2.5em;
-}
-
-.navcontainer li:first-child {
-  margin-left: 0;
-  }
-
-.navcontainer .searchcontainer {
-  min-width: 20%;
-  border: 1px solid #D9D9D9;
-  background: white;
-  position: relative;
-  top: 0.75em;
-  height: 1.5em;
-}
-
-.navcontainer .searchcontainer * {
-  margin: 0;
-  padding: 0;
-  background: white;
-}
-
-.searchcontainer .cse input.gsc-input, .searchcontainer input.gsc-input {
-  display: inline-block;
-  background-image:none!important;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 5px;
-}
-
-
-input.gsc-search-button {
-  display: none;
-}
-
-td.gsc-clear-button {
-    display: none;
-}
-
-
-.navcontainer .navscreen {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background: black;
-  opacity: 0.7;
-  border-bottom: 1px solid black;
-}
-
-
-
-
-
-
-
-
-/* footer styles */
-
-/*
-.footer, .footer *, .footer a:visited {
-  background: #333333;
-  color: white;
-  }
-
-
-
-
-
-  /* blog styles */
-/*
-
-#bloghome, .bpostpg {
-  background: #ebebeb;
-  background: #4d4d4d;
-  }
-
-
-#bloghome *, .bpostpg * {
-  color: #ebebeb;
-
-}
-
-.bpostpg .beam:nth-child(2) .twelvecolumn {
-
-  /*Some spaghetti code to help with vertical spacing of blog copy... */
-/*
-  padding:1em
-
-  }
-
-  /* Media queries */
-
-/*
-@media only screen and (max-width: 1300px) {
-
-  .navcontainer ul {
-    width: 100%;
-    }
-
-  .navcontainer img {
-    width: 90%;
-    max-width: 375px;
-  }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 800px) {
-
-  .navcontainer .searchcontainer, .navcontainer .searchcontainer * {display: none}
-
-/*
-.navcontainer .searchcontainer {
-  min-width: 40%;
-}
-
-*/
-/*
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*--------------------------------------
@@ -1006,11 +725,62 @@ td.gsc-clear-button {
     margin: 0 auto;
   }
   
+   .navigation .SVstuff {
+    margin-top: 1.5em;
+  }
+
 
 } /*End 1000px breakpoint*/
 
 
 @media only screen and (max-width: 800px) {} /*End 800px breakpoint*/
+
+
+@media only screen and (max-width: 750px) {
+  
+  
+  .navigation>*, .navigation .deeplinks {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
+  .navigation .RLstuff img {
+    max-width: 250px;
+  }
+  
+  .navigation .deeplinks {
+    margin: 0.75em 0;
+  }
+  
+  .navigation .SVstuff {
+    margin-top: 0;
+    text-align: center;
+  }
+
+
+  .navigation .SVstuff .social li {
+     top: 0;
+     padding: 0;
+  }
+
+  .navigation .searchbox {
+    display: inline-block;
+    min-width: 175px;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    top: 0;
+  }
+
+
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 700px) {
   
@@ -1028,72 +798,29 @@ td.gsc-clear-button {
   
  } /*End 700px breakpoint*/
 
+
+
+
 @media only screen and (max-width: 500px) {} /*End 500px breakpoint*/
 
 
 
+@media only screen and (max-width: 450px) {
 
-@media only screen and (max-width: 425px) {
-   
-   	   .navigation img {
-		   max-width: 250px;
-		   margin-bottom: 1em;
-		   }
-	   
-	   .navigation ul {
-		   
-		   float: none;
-		   margin-top: 0.25em;
-		   position: relative;
-		   top: 0.25em;
-		   }
-
-
-   }
-
-
-
-
-
-/*
-
-
-   Nav media queries 
-
-
-@media only screen and (max-width: 1300px) {
-
-  .navcontainer ul {
-    width: 100%;
-    }
-
-  .navcontainer img {
-    width: 90%;
-    max-width: 375px;
+  .navigation {
+    padding-left: 0.5em;
   }
 
+  .navigation>*, .navigation .deeplinks {
 
+     text-align: left;
+  }
+
+  .navigation .SVstuff .searchbox {display: none}
+
+ .navigation .SVstuff, .navigation .SVstuff * {
+   padding: 0;
+   text-align: left;
+   margin-bottom: 0.25em;
+ }
 }
-
-
-
-
-@media only screen and (max-width: 800px) {
-
-
-
-
-
-  .navcontainer .searchcontainer, .navcontainer .searchcontainer * {display: none}
-
-/*
-.navcontainer .searchcontainer {
-  min-width: 40%;
-}
-
-*/
-/*
-}
-
-
-*/
