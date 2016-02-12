@@ -745,6 +745,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     text-align: center;
     padding-bottom: 0;
   }
+
+  .navigation {padding-bottom: 0.75em;}
   
   .navigation .RLstuff img {
     max-width: 250px;
