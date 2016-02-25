@@ -689,6 +689,36 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 }
 
 
+
+  .footer {
+	background: #363636;
+	color: #efefef;
+	font-size: 0.75em;
+	}
+	
+  .footer img {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .footer a, .footer a:visited {
+    color: white;
+    font-weight: normal;
+    }
+
+  .footer * {
+    color: white;
+    list-style: none;
+  }
+
+
+  .footer div:last-child a {font-weight: bold}
+
+
+
+
+
 /*--------------------------------------
 #Media Queries
 --------------------------------------*/
@@ -777,10 +807,6 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
 
 }
-
-
-
-
 
 
 
