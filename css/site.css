@@ -692,6 +692,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
   .footer {
 	background: #363636;
+	background: #1c1c1c;
 	color: #efefef;
 	font-size: 0.75em;
 	}
@@ -714,7 +715,6 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
 
   .footer div:last-child a {font-weight: bold}
-
 
 
 
@@ -822,6 +822,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     margin: 0 auto;
        
   } 
+  
+  .footer, .footer * {text-align: center}
   
   
  } /*End 700px breakpoint*/
