@@ -91,35 +91,70 @@
 
       
         
- 	 <div class="beam padded-bottom margin-bottom">
+ 	<div class="beam padded-bottom padded-top margin-top margin-bottom" id="content1">
+		
+      <div class="fourteencolumn">
+        <h1>Independent publishing for all</h1>
+        <p>We're dedicated to helping you thrive on your own digital channels. <a href="about">Learn more >></a></p>
+      </div><!-- end 14col container -->
+        
+   </div><!-- end content1 -->
+ 
+ 
+ 
+      <div class="beam margin-top padded-top padded-bottom" id="content2">
 		
 		
-	  <div class="twocolumn"></div> <!-- a spacer -->
-      <div class="elevencolumn margin-bottom" id="landingcontent">
+		<div class="sevencolumn" id="beams">
+           <img src="img/locklaptop425.jpg" alt="locked computer" class="margin-bottom">
+                      <h5>Speed + Security = Beams</h5>
 
-        <h1 class="margin-bottom">Independent publishing for all</h1>
+           <p>Beams, our open web development framework, helps you convert to the HTTPS protocol while maintaining blazing performance. <a href="products">Learn more>></a></p>
+        </div><!-- End 6col container -->
 
+		
+        <div class="sixcolumn margin-bottom" id="spectrum">
+			
+			
+		   
+           
+		   <h5>Project Spectrum</h5>
+           <p>We've partnered with three diverse journalism schools to promote encrypted publishing in the communities that need it most. <a href="spectrum">Learn more >></a></p></a>
 
+           <img src="img/scripps-logo.png" alt="Scripps logo">
+           <img src="img/sjgc-logo.jpg" alt="SJGC logo">
+           <img src="img/unt-eagle.png" alt="Mayborn logo">
+           
 
-        <p>Roscoe Labs is a founder-led company dedicated to helping digital publishers of all sizes thrive technically, economically, and creatively on their own distribution channels.</p>
-        <p>Our flagship product is the Beams framework for publishing websites securely via the HTTPS protocol. HTTPS is now advocated by developers at <a href="http://www.pcworld.com/article/3027525/security/google-will-mark-non-encrypted-websites-with-a-scarlet-letter.html" target="blank">Google</a>, the <a href="//blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/" target="blank">Mozilla Foundation</a>, the <a href="http://open.blogs.nytimes.com/2014/11/13/embracing-https/?_r=4" target="blank">New York Times</a>, the <a href="//www.washingtonpost.com/news/the-switch/wp/2015/06/30/washington-post-starts-to-automatically-encrypt-part-of-web-site-for-visitors/" target="blank">Washington Post</a>, and more as a tool to protect user privacy.<p>
-        <p>Beams is free to use under MIT license, so you can <a href="../beams-0.2.5.zip">download it</a> and begin using it in your projects today. Visit us on GitHub for a handy "getting started" <a href="//github.com/roscoelabs/beams/wiki/Getting-Started-With-Beams">guide</a> or to <a href="//github.com/roscoelabs/beams">contribute</a> code, bug reports, or ideas to the project.</p>    <p>If you would like Roscoe Labs to help your business or organization implement HTTPS, please <a href="mailto:info@roscoelabs.com">drop us an email</a>. We're glad to talk more about your needs.</p>
-        <p>Our approach to development is highly collaborative and multidisciplinary. We believe it simply won't do anymore for content companies to slough off development of new digital tools, or for tech companies to be oblivious to key needs of content creators.</p>        
-        <p>Together we can do better than that. Just watch.</p>
+        </div><!-- End 6col container -->
+        
+		  
 
+           
+    
+        <div class="sevencolumn" id="cryptonews">
+           <img src="img/newsflags350.jpg" alt="newspaper front pages" class="margin-bottom">
+           <h5>Why we must encrypt all the news</h5>
+           <p>Media organizations should be doing more to protect sources and users online. <a href="blog/20160308-encrypt-the-news.html">Learn more >></a></p>
+                
+        </div><!-- End 6col container -->
+        
+        
+        
 
-
+        
         
         <span></span>
-        </div><!-- End landingcontent -->
-        
- </div><!-- end content beam -->
+      
+      </div><!-- End content2 -->
+
  
  
  
  
  
- <div class="beam footer margin-top padded-top padded-bottom">
+ 
+ <div class="beam footer padded-top padded-bottom">
 
 
 
@@ -171,63 +206,80 @@
 
 
     html {
-      background: url('img/webtreats11.jpg');
+      background: url('img/webtreats12.jpg');
       background-size: 750px auto;
-      background-position: center top;
+      background-position: center center;
       background-repeat: repeat;
       background-attachment: fixed;
     }
     
-    .navigation {
-		background: white;
+    #content1 {
+		padding-top: 2em;
+		padding-bottom: 8em; 
 		}
-
-
-    #landingcontent {
-		margin-top: 2em;
-		padding: 3em 3em 6em 3em;
-		color: white;
+    
+    #content1 *, #content2 * {
+		font-family: 'Lato', 'sans-serif';
 		}
-		
-		
-	#landingcontent, #landingcontent * {
+    
+    #content1 h1 {
+		font-size: 3.75em;
+		}
+	
+	#content1 p {
+		font-size: 1.25em;
+		}
+    
+    #content1 div>* {
+		padding: 12px;
+		background: #820000;
+		opacity: 0.8;
+		} 
+
+     #content1 * {
+		 color: white;
+		 }
+
+    #content2 {
+		position: relative;
+		border-top: 1px solid #e0e0e0;
+		}
+    		
+	#content2 *{
 		position: relative;
 		z-index: 1;
-		color: white;
-		}
-		
-	#landingcontent h1, #landingcontent p {
-		color: #ebebeb;
-		color: #e6e6e6;
 		}
 
-	#landingcontent * {color:white}
-		
-    #landingcontent span {
+    #content2 span {
 		display: inline-block;
+		position: absolute;
+		bottom: 0; 
+		right: 0;
+		z-index: 0;
+		height: 100%; 
 		width: 100%;
-		height: 100%;
-		background: #363636;
-        z-index:0;
-        opacity: 1.0;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+		background: #e0e0e0;
+		margin-top: 1px solid #e0e0e0;
+		opacity: 0.85;
 		}
 		
-			
-	  
-	@media only screen and (max-width: 700px) {
+    #cryptonews, #beams, #spectrum {
+		padding: 0.5em 2.5em;
 		
-             #landingcontent {
-				 padding: 2em 1.5em 6em 1.5em;
-				 }		  
-		  
-	      	      #landingcontent h1 {
-					  }
-		  
 		}
-	  
+    
+    #spectrum img {
+		display: inline;
+		width: 20%;
+		max-width: 75px;
+		margin: 0.5em;
+		}
+
+
+    #spectrum img:last-child {
+		width: 35%;
+		max-width: none;
+		}
 	  
 	  
 </style>
