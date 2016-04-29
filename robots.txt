@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /js/
-Disallow: /css/
-Disallow: /products/lair.html
+Disallow: *
+Disallow: */*
+Disallow: */*/*
