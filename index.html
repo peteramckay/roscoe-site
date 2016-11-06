@@ -3,28 +3,22 @@
 <html lang="en" id="homepage">
 
 <head>
-	
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Roscoe Labs</title>
   <link rel="icon" type="image/png" href="img/favicon.png" />
 
   <link rel="stylesheet" type="text/css" href="css/site.css">
-  
-  <!-- 
-  
-  Once testing is done, minify and link to minified CSS file...
-  
-  <link rel="stylesheet" type="text/css" href="css/site.min.css">
-  
-  -->
 
   <link rel="prefetch" href="about/index.html">
   <link rel="dns-prefetch" href="//github.com/roscoelabs">
   <link rel="dns-prefetch" href="//twitter.com/roscoe_labs">
   <link rel="dns-prefetch" href="//facebook.com/roscoelabs">
-  
-    <!--
+
+
+
+<!-- search script, if we need it...
 
   <script>
         (function() {
@@ -37,77 +31,96 @@
        var s = document.getElementsByTagName('script')[0];
        s.parentNode.insertBefore(gcse, s);
       })();
-  </script>  
+  </script>
 
 -->
 
 </head>
 
 
-<body>
-
-  <div class="beam margin-top margin-bottom padded-top padded-bottom">
-
-    <div class="elevencolumn centered margin-top margin-bottom padded-top padded-bottom">
-    
-    
-    <h1 class="margin-bottom">A new chapter for Roscoe Labs</h1>
-    
-    <p>Effective Aug. 15, 2016, co-founders Peter McKay and Lawrence Patrick will step down from their day-to-day roles at Roscoe Labs as chief product officer and CEO, respectively, to pursue other opportunities. Co-founder Katrina Miles will become the new CEO.</p>
-    <p>When we started Roscoe Labs more than six years ago, we set out to crowdsource local news by leveraging mobile devices. Then we pivoted to our current mission to equip journalists and publishers with secure, customizable, and open tools to protect free speech and increase independence.</p>
-    <p>We have learned a great deal from this process, and intend to apply what we have learned to make Roscoe Labs a better company in the months and years ahead.</p>
-    <p>As we go forward independently, we thank you all again for your support over the years. It has meant a lot to all three of us.</p>
-
-    <p>Warmly,</p>
-    
-    <div id="sigs">
-		
-      <span>
-		 <p>Peter McKay</p>
-		 <p><a href="https://twitter.com/peteramckay" target="blank">@peteramckay</a></p>
-      </span>
-    
-      <span>
-		 <p>Katrina Miles</p>
-		 <p><a href="https://twitter.com/kmiles524" target="blank">@kmiles524</a></p>
-      </span>
-    
-      <span>
-		 <p>Lawrence Patrick</p>
-		 <p><a href="https://twitter.com/lawrencepatrick" target="blank">@lawrencepatrick</a></p>
-      </span>
-
-    
-    </div><!-- End sigs-->
-
-               
-       
-    
-    </div><!-- End 11col container -->
-  
-  </div><!-- End beam-->
+<body class="padded-top padded-bottom">
 
 
-  <style>
-	  
-    html {padding-bottom: 10em}
-    
-    #sigs {
-		padding: 1em 0;
-		}
-    
-    #sigs * {
-		margin: 0; 
-		padding: 0;
-		}
-    
-    
-    #sigs span {
-		display: inline-block;
-		min-width: 30%;
-		}
-    
-  </style>
+    <div class="beam margin-top margin-bottom padded-top padded-bottom">
+
+			<span id="screen"></span>
+
+       <img src="img/red800.png" alt="Roscoe Labs logo">
+
+			 <span id="buttons">
+         <a href="https://twitter.com/roscoe_labs"><img src="img/twitter.jpg" alt="Twitter logo"></a>
+				 <a href="https://github.com/roscoelabs/"><img src="img/octocat.png" alt="GitHub logo" id="ghbutton"></a>
+         <a href="https://www.facebook.com/RoscoeLabs/"><img src="img/fb.jpg" alt="Facebook logo"></a>
+			 </span>
+
+		</div> <!-- End beam -->
+
+
+    <style>
+
+		   body {
+				 background: url(img/bbchouse2500.jpg);
+				 background-size: cover;
+				 background-position: center center;
+				 background-repeat: no-repeat;
+			 }
+
+       .beam {
+				 margin-top: 3rem;
+				 padding: 1.5rem;
+				 display: inline;
+				 width: auto;
+			 }
+
+			 .beam, .beam * {
+				 position: relative;
+         z-index: 1;
+			 }
+
+       .beam>img {
+				 max-width: 400px
+			 }
+
+			 #buttons {
+				 margin-top: 2rem;
+				 display: block;
+			 }
+
+			 #buttons img {
+				 margin: 0.25rem;
+				 background: white;
+				 border: 1px solid white;
+				 height: 50px;
+			 }
+
+			 #buttons #ghbutton {
+				 padding: 0.25rem;
+			 }
+
+			 #screen {
+  				display: block;
+				  position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					background: white;
+					z-index: 0;
+					opacity: 0.85;
+			 }
+
+
+		</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38626596-2', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>
